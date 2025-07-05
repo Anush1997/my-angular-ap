@@ -1,17 +1,28 @@
 <!-- signup.component.html -->
 <div class="container">
   <div class="form-section">
-    <h2>Welcome To GreenSpace</h2>
+    <div>
+      <h2>Welcome Back!</h2>
+      <p class="bold">Enter your Credentials to access your account</p>
+    </div>
+
     <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" autocomplete="off">
-      <!-- <input type="text" placeholder="Name" formControlName="name" /> -->
+      <label for="email">Email Address</label>
       <input type="email" placeholder="Email address" formControlName="email" autocomplete="username" />
+
+      <label for="password">Password</label>
       <input type="password" placeholder="Password" formControlName="password" autocomplete="current-password" />
+
+      <!-- Forgot Password Link -->
+      <div class="forgot-password">
+        <a routerLink="/forgot-password">Forgot password?</a>
+      </div>
 
       <label class="terms">
         <input type="checkbox" formControlName="agree" /> I agree to the terms & policy
       </label>
 
-      <button type="submit">Signup</button>
+      <button type="submit">Login</button>
     </form>
 
     <div class="divider">or</div>
@@ -22,10 +33,13 @@
     </div>
 
     <p class="signin-link">
-      Have an account? <a routerLink="/login">Sign in</a>
+      Don't have an account? <a routerLink="../signup">Sign Up</a>
     </p>
   </div>
+
   <div class="image-section">
-    <div class="overlay-text">Plant seeds of happiness, hope, success and love; it will all come back to you in abundance.</div>
+    <div class="overlay-text">
+      Plant seeds of happiness, hope, success and love; it will all come back to you in abundance.
+    </div>
   </div>
 </div>

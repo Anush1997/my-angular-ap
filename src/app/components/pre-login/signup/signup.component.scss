@@ -14,19 +14,12 @@
 
     h2 {
       font-size: 28px;
-      margin-bottom: 6px; // reduce gap below the heading
+      margin-bottom: 30px;
     }
 
     form {
       display: flex;
       flex-direction: column;
-
-      label {
-        margin-top: 12px;
-        margin-bottom: 10px; // <-- Gap between label and input
-        font-size: 14px;
-        color: #333;
-      }
 
       input[type='text'],
       input[type='email'],
@@ -211,25 +204,4 @@
       }
     }
   }
-  .forgot-password {
-    text-align: right;
-    margin-bottom: 10px;
-  
-    a {
-      font-size: 13px;
-      color: #007bff;
-      text-decoration: none;
-  
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-
-  .bold {
-    font-weight: bold;
-    margin-top: 0;       // remove top margin of paragraph
-  margin-bottom: 16px; // optional, adjust as needed
-  }
-  
 }

@@ -1,0 +1,32 @@
+<!-- signup.component.html -->
+<div class="container">
+    <div class="form-section">
+      <h2> Get Started Now </h2>
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <input type="text" placeholder="Name" formControlName="name" />
+        <input type="email" placeholder="Email address" formControlName="email" autocomplete="username"/>
+        <input type="password" placeholder="Password" formControlName="password" autocomplete="new-password"/>
+  
+        <label class="terms">
+          <input type="checkbox" formControlName="agree" /> I agree to the terms & policy
+        </label>
+  
+        <button type="submit">Signup</button>
+      </form>
+  
+      <div class="divider">or</div>
+  
+      <div class="social-buttons">
+        <button><img src="assets/images/google.svg" alt="Google" /> Sign in with Google</button>
+        <button><img src="assets/images/facebook.svg" alt="Facebook" /> Sign in with Facebook</button>
+      </div>
+  
+      <p class="signin-link">
+        Have an account? <a routerLink="../login">Sign in</a>
+      </p>
+    </div>
+    <div class="image-section">
+      <div class="overlay-text">Plant seeds of happiness, hope, success and love; it will all come back to you in abundance.</div>
+    </div>
+  </div>
+  

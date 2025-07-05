@@ -1,9 +1,14 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './components/pre-login/login/login.component';
 
 export const routes: Routes = [
     {
-        path:'',
-        component:LoginComponent
-    }
+        path: '',
+        redirectTo: 'pre-login',
+        pathMatch: 'full'
+      },
+      {
+        path: 'pre-login',
+        loadChildren: () =>
+          import('./components/pre-login/pre-login.routes').then(m => m.preLoginRoutes)
+      }
 ];
