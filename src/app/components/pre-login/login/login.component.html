@@ -4,8 +4,8 @@
     <h2>Welcome To GreenSpace</h2>
     <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" autocomplete="off">
       <!-- <input type="text" placeholder="Name" formControlName="name" /> -->
-      <input type="email" placeholder="Email address" formControlName="email" />
-      <input type="password" placeholder="Password" formControlName="password" />
+      <input type="email" placeholder="Email address" formControlName="email" autocomplete="username" />
+      <input type="password" placeholder="Password" formControlName="password" autocomplete="current-password" />
 
       <label class="terms">
         <input type="checkbox" formControlName="agree" /> I agree to the terms & policy
