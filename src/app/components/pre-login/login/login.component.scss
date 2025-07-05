@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .container {
   display: flex;
   height: 100vh;
-  font-family: 'Segoe UI', sans-serif;
+  // font-family: 'Segoe UI', sans-serif;
 
   .form-section {
     flex: 1;
@@ -110,13 +112,14 @@
     background-size: cover;
 
     .overlay-text {
+      font-family:'Georgia',sans-serif;
       position: absolute;
       top: 30%;
       left: 50%;
       transform: translate(-50%, -50%);
       max-width: 80%;
       padding: 20px;
-      font-size: 32px;
+      font-size: 2vh;
       line-height: 1.4;
       font-weight: 600;
       text-align: center;
